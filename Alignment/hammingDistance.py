@@ -3,7 +3,7 @@
 #Given: Two DNA strings s and t of equal length (not exceeding 1 kbp).
 #Return: The Hamming distance dH(s,t).
 
-def hammingDistance(dna1, dna2):
+def hamming_distance(dna1, dna2):
     if len(dna1) != len(dna2):
         print("Length of two dna sequences must match")
 
@@ -17,4 +17,4 @@ with open(dna_file, 'r') as f:
         line = line.strip()
         sequences.append(line)
 
-print(hammingDistance(sequences[0], sequences[1]))
+print(hamming_distance(sequences[0], sequences[1]))
